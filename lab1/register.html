@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学生信息注册</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+        var JSPpath = location.href.substring(0, location.href.lastIndexOf('/')) + "/register_action.jsp";
+    </script>
+    <script>
+        function check(form) {
+            var flag = true;
+            if(form.name.value == ""){
+                document.getElementById("name").placeholder = "用户名不能为空"
+                flag = false;
+            }
+            if(form.race.value == ""){
+                document.getElementById("race").placeholder = "民族不能为空"
+                flag = false;
+            }
+            if(form.id.value == ""){
+                document.getElementById("id").placeholder = "身份证号不能为空"
+                flag = false;
+            }
+            if(isNaN(form.id.value)){
+                alert("身份证号必须是数字！")
+                flag = false;
+            }
+            if(form.major.length == 0){
+                alert("至少选择一个专业！")
+                flag = false;
+            }
+            return flag;
+        }
+    </script>
+
+    <script>
+        function AJAX(form) {
+            if(check(form)) {
+                $(document).ready(function () {
+                    $("#btsb").click(function () {
+                        // var data = {
+                            // "name" : $("#name").value,
+                            // "race" : $("#race").value,
+                            // "id" : $("#id").value,
+                            // "pols" : $("pols").value,
+                            // "sex" : $("sex").value,
+                            // "major": $("major").value,
+                            // "school" : $("#school").value,
+                            // "profile" : $("#profile").value
+                        // };
+                        var form = $("#register");
+                        $.ajax({
+                            type : "post",
+                            url : JSPpath,
+                            data : {
+                                "name" : $("#name").val(),
+                                "race" : $("#race").val(),
+                                "id" : $("#id").val(),
+                                "pols" : $(".pols").val(),
+                                "sex" : $(".sex").val(),
+                                "major": $(".major").val(),
+                                "school" : $("#school").val(),
+                                "profile" : $("#profile").val()
+                            },
+                            success : function (data) {
+                                alert("submut successful!");
+                                $("#displayEdit").html(data);
+                                $("#register_table").html("");
+                            },
+                            error: function(data) {
+
+                                // Some error in ajax call
+                                alert("some Error");
+                            }
+                        });
+                    });
+                });
+            }
+        }
+    </script>
+</head>
+<body id="display">
+<div id="displayEdit"></div>
+<form id="register" action="http://localhost:8080/lab1/register_action.jsp" method="get">
+    <table id="register_table" >
+        <tr>
+            <td><h1>学生信息注册</h1></td>
+        </tr>
+        <tr>
+            <td>姓名：</td>
+            <td><input type="text" id="name" name="name"></td>
+        </tr>
+        <tr>
+            <td>民族：</td>
+            <td><input type="text" id="race" name="race"></td>
+        </tr>
+        <tr>
+            <td>身份证号：</td>
+            <td><input type="password" id="id" name="id"></td>
+        </tr>
+        <tr>
+            <td>政治面貌：</td>
+            <td>
+                <input class="pols" type="radio" name="pols" value="群众"/>群众
+                <input class="pols" type="radio" name="pols" value="共青团员"/>共青团员
+                <input class="pols" type="radio" name="pols" value="党员"/>党员
+            </td>
+        </tr>
+        <tr>
+            <td>性别：</td>
+            <td>
+                <input class="sex" type="radio" name="sex" value="男">男
+                <input class="sex" type="radio" name="sex" value="女">女
+            </td>
+        </tr>
+        <tr>
+            <td>专业：</td>
+            <td>
+                <input class="major" type="checkbox" name="major" value="计算机科学"/>计算机科学
+                <input class="major" type="checkbox" name="major" value="软件工程"/>软件工程
+                <input class="major" type="checkbox" name="major" value="艺术">艺术
+            </td>
+        </tr>
+        <tr>
+            <td>学校：</td>
+            <td>
+                <select id="school" name="school">
+                    <option value="青蛙大学">青蛙大学</option>
+                    <option value="北大青鸟">北大青鸟</option>
+                    <option selected="selected" value="哈尔滨工业大专">哈尔滨工业大专</option>
+                    <option value="哈尔滨工业大学">哈尔滨工业大学</option>
+                    <option value="圣马家沟职业技术学院">圣马家沟职业技术学院</option>
+                    <option value="哈尔滨攻城大学">哈尔滨攻城大学</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>个人简介：</td>
+            <td>
+                <textarea id="profile" name="profile" ></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td><button type="reset" form="register">重置</button></td>
+            <td>
+                <button type="button" id="btsb" onclick="AJAX(this.form)">AJAX提交</button>
+                <button type="submit" form="register" onclick="return check(this.form)">表单提交</button>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
