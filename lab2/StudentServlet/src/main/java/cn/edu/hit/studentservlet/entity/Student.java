@@ -4,18 +4,18 @@ import java.time.LocalDate;
 import java.util.Date;
 
 public class Student {
-    private char[] sid;
-    private char[] sname;
-    private char gender;
+    private String sid;
+    private String sname;
+    private String gender;
 
     private Integer age;
     private Date birthday;
-    private char[] mid;
+    private String mid;
 
     public Student(){
 
     }
-    public Student(char[] sid, char[] sname, char gender, Integer age,Date birthday, char[] mid){
+    public Student(String sid, String sname, String gender, Integer age,Date birthday, String mid){
         this.sid = sid;
         this.sname = sname;
         this.gender = gender;
@@ -24,27 +24,27 @@ public class Student {
         this.mid = mid;
     }
 
-    public char[] getSid() {
+    public String getSid() {
         return sid;
     }
 
-    public void setSid(char[] sid) {
+    public void setSid(String sid) {
         this.sid = sid;
     }
 
-    public char[] getSname() {
+    public String getSname() {
         return sname;
     }
 
-    public void setSname(char[] sname) {
+    public void setSname(String sname) {
         this.sname = sname;
     }
 
-    public char getGender() {
+    public String getGender() {
         return gender;
     }
 
-    public void setGender(char gender) {
+    public void setGender(String gender) {
         this.gender = gender;
     }
 
@@ -64,11 +64,11 @@ public class Student {
         this.birthday = birthday;
     }
 
-    public char[] getMid() {
+    public String getMid() {
         return mid;
     }
 
-    public void setMid(char[] mid) {
+    public void setMid(String mid) {
         this.mid = mid;
     }
 }

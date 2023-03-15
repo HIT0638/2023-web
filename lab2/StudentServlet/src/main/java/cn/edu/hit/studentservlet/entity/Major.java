@@ -1,29 +1,31 @@
 package cn.edu.hit.studentservlet.entity;
 
 public class Major {
-    private char[] mid;
-    private char[] mname;
+    private String mid;
+    private String mname;
 
     public Major(){
 
     }
-    public Major(char[] mid,char[] mname){
+    public Major(String mid,String mname){
         this.mid = mid;
         this.mname = mname;
     }
 
-    public void setMid(char[] mid){
-        this.mid = mid;
-    }
-    public void setMname(char[] mname){
-        this.mname = mname;
-    }
 
-    public char[] getMid(){
+    public String getMid() {
         return mid;
     }
-    public char[] getMname(){
+
+    public void setMid(String mid) {
+        this.mid = mid;
+    }
+
+    public String getMname() {
         return mname;
     }
 
+    public void setMname(String mname) {
+        this.mname = mname;
+    }
 }
