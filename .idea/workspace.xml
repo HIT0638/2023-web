@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="StudentServlet:war exploded" />
+      <artifact name="StudentServlet:war" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -10,10 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e355fdcb-f20d-4b06-9a2b-37c4bc030bb8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2/StudentServlet/src/main/java/cn/edu/hit/studentservlet/dao/MajorDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/StudentServlet/src/main/java/cn/edu/hit/studentservlet/dao/MajorDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2/StudentServlet/src/main/java/cn/edu/hit/studentservlet/dao/impl/MajorDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/StudentServlet/src/main/java/cn/edu/hit/studentservlet/dao/impl/MajorDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2/StudentServlet/src/main/java/cn/edu/hit/studentservlet/dao/impl/StudentDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/StudentServlet/src/main/java/cn/edu/hit/studentservlet/dao/impl/StudentDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/StudentServlet/src/main/java/cn/edu/hit/studentservlet/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/StudentServlet/src/main/java/cn/edu/hit/studentservlet/action/StudentServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/StudentServlet/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/StudentServlet/src/main/webapp/student.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/StudentServlet/src/main/webapp/student.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,29 +47,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/CodeData/web/lab2/StudentServlet/src/main/webapp/WEB-INF/lib&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.20114942&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/CodeData/web/lab2/StudentServlet/src/main/webapp/WEB-INF/lib",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.20114942",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
-  <component name="RunManager" selected="Application.DBUtil">
+}]]></component>
+  <component name="RunManager" selected="Tomcat Server.Tomcat 10.1.6">
     <configuration name="DBUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cn.edu.hit.studentservlet.db.DBUtil" />
       <module name="StudentServlet" />
@@ -80,6 +83,20 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="All in StudentServlet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="StudentServlet" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="student.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/StudentServlet_war/student.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="student.html (2)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/web/StudentServlet/src/main/webapp/student.html" useBuiltInWebServerPort="true">
+      <method v="2" />
     </configuration>
     <configuration name="student.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/StudentServlet_war_exploded/student.html">
       <method v="2" />
@@ -174,11 +191,17 @@
     </configuration>
     <list>
       <item itemvalue="Application.DBUtil" />
+      <item itemvalue="JavaScript Debug.student.html (1)" />
+      <item itemvalue="JavaScript Debug.student.html (2)" />
       <item itemvalue="JavaScript Debug.student.html" />
+      <item itemvalue="JUnit.All in StudentServlet" />
       <item itemvalue="Tomcat Server.Tomcat 10.1.6" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.student.html (2)" />
+        <item itemvalue="JUnit.All in StudentServlet" />
+        <item itemvalue="JavaScript Debug.student.html (1)" />
         <item itemvalue="Application.DBUtil" />
         <item itemvalue="JavaScript Debug.student.html" />
       </list>
@@ -195,7 +218,7 @@
       <workItem from="1678873891233" duration="714000" />
       <workItem from="1678877396457" duration="4242000" />
       <workItem from="1678882186359" duration="1817000" />
-      <workItem from="1678952107585" duration="1179000" />
+      <workItem from="1678952107585" duration="5731000" />
     </task>
     <servers />
   </component>

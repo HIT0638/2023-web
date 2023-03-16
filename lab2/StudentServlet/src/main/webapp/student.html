@@ -5,6 +5,26 @@
     <title>Title</title>
 </head>
 <body>
+<script>
+    $(document).ready(function () {
+        $.ajax({
+            url:"StudentServlet",
+            data: {
+                action : "getAll"
+            },
+            success : function (responseText){
+                alert("getAll succeessful!");
+                $("#showStudent").html(responseText);
+            },
+            error : function (){
+                alert("Fail!")
+            }
+        })
+    })
+</script>
+
+<div id="showStudent"></div>
+
 <form action="">
     <table>
         <tr>
