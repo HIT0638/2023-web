@@ -12,11 +12,8 @@
     <list default="true" id="e355fdcb-f20d-4b06-9a2b-37c4bc030bb8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab2/StudentServlet/src/main/java/cn/edu/hit/studentservlet/dao/MajorDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/StudentServlet/src/main/java/cn/edu/hit/studentservlet/dao/MajorDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2/StudentServlet/src/main/java/cn/edu/hit/studentservlet/dao/StudentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/StudentServlet/src/main/java/cn/edu/hit/studentservlet/dao/StudentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2/StudentServlet/src/main/java/cn/edu/hit/studentservlet/daoimpl/MajorDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/StudentServlet/src/main/java/cn/edu/hit/studentservlet/dao/impl/MajorDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2/StudentServlet/src/main/java/cn/edu/hit/studentservlet/daoimpl/StudentDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/StudentServlet/src/main/java/cn/edu/hit/studentservlet/dao/impl/StudentDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2/StudentServlet/src/main/java/cn/edu/hit/studentservlet/entity/Major.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/StudentServlet/src/main/java/cn/edu/hit/studentservlet/entity/Major.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2/StudentServlet/src/main/java/cn/edu/hit/studentservlet/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/StudentServlet/src/main/java/cn/edu/hit/studentservlet/entity/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/StudentServlet/src/main/java/cn/edu/hit/studentservlet/dao/impl/MajorDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/StudentServlet/src/main/java/cn/edu/hit/studentservlet/dao/impl/MajorDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/StudentServlet/src/main/java/cn/edu/hit/studentservlet/dao/impl/StudentDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/StudentServlet/src/main/java/cn/edu/hit/studentservlet/dao/impl/StudentDaoImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,6 +195,7 @@
       <workItem from="1678873891233" duration="714000" />
       <workItem from="1678877396457" duration="4242000" />
       <workItem from="1678882186359" duration="1817000" />
+      <workItem from="1678952107585" duration="1179000" />
     </task>
     <servers />
   </component>

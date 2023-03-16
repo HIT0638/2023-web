@@ -1,33 +1,55 @@
 package cn.edu.hit.studentservlet.dao.impl;
 
 import cn.edu.hit.studentservlet.dao.MajorDao;
+import cn.edu.hit.studentservlet.db.DBUtil;
 import cn.edu.hit.studentservlet.entity.Major;
 
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class MajorDaoImpl implements MajorDao {
-    @Override
-    public void add(Major major) {
-
-    }
-
-    @Override
-    public void modify(Major major) {
-
-    }
-
-    @Override
-    public void remove(String mid) {
-
-    }
 
     @Override
     public Major getByMid(String mid) {
-        return null;
+        DBUtil db = new DBUtil();
+        String mname = null;
+
+        try{
+            ResultSet rs = db.executeQuery("select * from major where mid = '" + mid + "'");
+            while(rs.next()){
+                mname = rs.getString("mname");
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        } finally {
+            db.close();
+        }
+
+        return new Major(mid,mname);
     }
 
     @Override
     public List<Major> getAll(String sql) {
-        return null;
+        DBUtil db = new DBUtil();
+        List<Major> majors = new ArrayList<>();
+
+        String mid = null;
+        String mname = null;
+
+        try{
+            ResultSet rs = db.executeQuery("select * from major");
+            while(rs.next()){
+                mid = rs.getString("mid");
+                mname = rs.getString("mname");
+
+                majors.add(new Major(mid,mname));
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
+        return majors;
     }
 }
