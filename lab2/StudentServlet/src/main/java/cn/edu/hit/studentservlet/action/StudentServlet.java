@@ -3,16 +3,18 @@ package cn.edu.hit.studentservlet.action;
 import java.io.*;
 import java.util.Date;
 import java.util.List;
+//import com.alibaba.fastjson.JSON;
 
 import cn.edu.hit.studentservlet.dao.StudentDao;
 import cn.edu.hit.studentservlet.dao.impl.StudentDaoImpl;
 import cn.edu.hit.studentservlet.entity.Student;
+import com.mysql.cj.xdevapi.JsonArray;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 
 import static com.mysql.cj.xdevapi.Type.JSON;
 
-@WebServlet(name = "helloServlet", value = "/hello-servlet")
+@WebServlet(name = "StudentServlet", value = "/student-servlet")
 public class StudentServlet extends HttpServlet {
     private String message;
 
@@ -21,13 +23,10 @@ public class StudentServlet extends HttpServlet {
     }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        response.setContentType("text/html;charSet=UTF-8");
-
+        response.setContentType("application/json; charSet=UTF-8");
+        response.setCharacterEncoding("UTF-8");
         // Hello
         PrintWriter out = response.getWriter();
-        out.println("<html><body>");
-        out.println("<h1>" + message + "</h1>");
-        out.println("</body></html>");
 
         String action = request.getParameter("action");
         if(action.equals("add")){
@@ -43,8 +42,8 @@ public class StudentServlet extends HttpServlet {
         }
         else if (action.equals("getAll")){
             StudentDao stuDao = new StudentDaoImpl();
-            List<Student> stus = stuDao.getAll("");
-            out.println(stus.toString());
+            List<Student> stus = stuDao.getAll("select * from student");
+//            out.println(JSON.toJSONString(stus));
         }
 
 

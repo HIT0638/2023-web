@@ -3,49 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="student.js"></script>
 </head>
 <body>
-<script>
-    $(document).ready(function () {
-        $.ajax({
-            url:"StudentServlet",
-            data: {
-                action : "getAll"
-            },
-            success : function (responseText){
-                alert("getAll succeessful!");
-                $("#showStudent").html(responseText);
-            },
-            error : function (){
-                alert("Fail!")
-            }
-        })
-    })
-</script>
+<div id="showStu">
 
-<div id="showStudent"></div>
+</div>
 
-<form action="">
+<form id="addStuF" name="addStuF" action="student-servlet">
     <table>
         <tr>
             <td><h2>新增学生信息</h2></td>
         </tr>
         <tr>
-            <td>请输入姓名</td>
-            <td><input id="sname" placeholder="请输入姓名"></td>
+            <td>姓名</td>
+            <td><input id="sname" name="sname" placeholder="请输入姓名"></td>
         </tr>
         <tr>
-            <td>请输入学号</td>
-            <td><input id="sid" placeholder="请输入学号"></td>
+            <td>学号</td>
+            <td><input id="sid" name="sid" placeholder="请输入学号"></td>
         </tr>
         <tr>
             <td>性别</td>
             <td>
-                <input type="radio" name="male">男
-                <input type="radio" name="female">女
+                <input type="radio" name="gender" value="m">男
+                <input type="radio" name="gender" value="w">女
+            </td>
+        </tr>
+        <tr>
+            <td>年龄</td>
+            <td><input type="number" name="age" id="age"></td>
+        </tr>
+        <tr>
+            <td>生日</td>
+            <td><input type="date" name="birthday" id="birthday"></td>
+        </tr>
+        <tr>
+            <td>专业</td>
+            <td>
+                <select name="major" id="major">
+                    <option value="0">***请选择专业***</option>
+                    <option value="1">计算机科学与技术</option>
+                    <option value="2">软件工程</option>
+                    <option value="3">人工智能</option>
+                    <option value="4">大数据</option>
+                    <option value="5">信息安全</option>
+                    <option value="6">物联网</option>
+                </select>
             </td>
         </tr>
     </table>
+    <button type="submit" id="submitButton"></button>
 </form>
 </body>
 </html>

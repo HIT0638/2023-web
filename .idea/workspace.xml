@@ -10,17 +10,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e355fdcb-f20d-4b06-9a2b-37c4bc030bb8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1a9bc1f8-bf72-484d-a3de-64014f5466fe.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1a9bc1f8-bf72-484d-a3de-64014f5466fe.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/web.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2/StudentServlet/src/main/java/cn/edu/hit/studentservlet/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/StudentServlet/src/main/java/cn/edu/hit/studentservlet/action/StudentServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2/StudentServlet/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/StudentServlet/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/StudentServlet/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/StudentServlet/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/StudentServlet/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/StudentServlet/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/StudentServlet/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/StudentServlet/src/main/java/cn/edu/hit/studentservlet/action/StudentServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/StudentServlet/src/main/java/cn/edu/hit/studentservlet/action/StudentServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab2/StudentServlet/src/main/webapp/student.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/StudentServlet/src/main/webapp/student.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -42,6 +54,12 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="MavenRunner">
+    <option name="delegateBuildToMaven" value="true" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2N2tDwWfnLWaQKLCP8oo0fbDzHU" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -53,15 +71,15 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/CodeData/web/lab2/StudentServlet/src/main/webapp/WEB-INF/lib",
+    "last_opened_file_path": "D:/CodeData/web",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.20114942",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -70,6 +88,13 @@
     ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\CodeData\web\lab2\StudentServlet\src\main\java\cn\edu\hit\studentservlet\action" />
+      <recent name="D:\CodeData\web\lab2\StudentServlet\src\main\webapp\WEB-INF\lib" />
+      <recent name="D:\CodeData\web\lib" />
+    </key>
+  </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 10.1.6">
     <configuration name="DBUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cn.edu.hit.studentservlet.db.DBUtil" />
@@ -83,6 +108,11 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="major.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
+      <script-file value="1a9bc1f8-bf72-484d-a3de-64014f5466fe/schema/hit/table/major.sql" />
+      <script-mode>FILE</script-mode>
+      <method v="2" />
     </configuration>
     <configuration name="All in StudentServlet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="StudentServlet" />
@@ -98,11 +128,8 @@
     <configuration name="student.html (2)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/web/StudentServlet/src/main/webapp/student.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="student.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/StudentServlet_war_exploded/student.html">
-      <method v="2" />
-    </configuration>
     <configuration name="Tomcat 10.1.6" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.6" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/StudentServlet_war/" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/StudentServlet_war/student.html" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="StudentServlet:war">
@@ -191,19 +218,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.DBUtil" />
+      <item itemvalue="Database Script.major.sql" />
       <item itemvalue="JavaScript Debug.student.html (1)" />
       <item itemvalue="JavaScript Debug.student.html (2)" />
-      <item itemvalue="JavaScript Debug.student.html" />
       <item itemvalue="JUnit.All in StudentServlet" />
       <item itemvalue="Tomcat Server.Tomcat 10.1.6" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Database Script.major.sql" />
+        <item itemvalue="JavaScript Debug.student.html (1)" />
         <item itemvalue="JavaScript Debug.student.html (2)" />
         <item itemvalue="JUnit.All in StudentServlet" />
-        <item itemvalue="JavaScript Debug.student.html (1)" />
         <item itemvalue="Application.DBUtil" />
-        <item itemvalue="JavaScript Debug.student.html" />
       </list>
     </recent_temporary>
   </component>
@@ -219,10 +246,29 @@
       <workItem from="1678877396457" duration="4242000" />
       <workItem from="1678882186359" duration="1817000" />
       <workItem from="1678952107585" duration="5731000" />
+      <workItem from="1679395930268" duration="2656000" />
+      <workItem from="1679398608559" duration="594000" />
+      <workItem from="1679399229660" duration="1196000" />
+      <workItem from="1679400654983" duration="1833000" />
+      <workItem from="1679450313664" duration="133000" />
+      <workItem from="1679450485097" duration="39000" />
+      <workItem from="1679450540739" duration="210000" />
+      <workItem from="1679452082823" duration="21000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
