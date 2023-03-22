@@ -1,5 +1,6 @@
 package cn.edu.hit.studentservlet.dao.impl;
 
+import cn.edu.hit.studentservlet.dao.MajorDao;
 import cn.edu.hit.studentservlet.dao.StudentDao;
 import cn.edu.hit.studentservlet.db.DBUtil;
 import cn.edu.hit.studentservlet.entity.Student;
@@ -21,10 +22,10 @@ public class StudentDaoImpl implements StudentDao {
         String gender = stu.getGender();
         Integer age = stu.getAge();
         String mid = stu.getMid();
-        Date birthday = stu.getBirthday();
+        String birthday = stu.getBirthday();
 
         db.executeUpdate("INSERT INTO student(sid,sname,age,gender,mid,birthday) values" +
-                "('" + sid + "','" + sname + "','" + age + "','" + gender + "','" + mid + "','" + birthday + "')");
+                "('" + sid + "','" + sname + "'," + age + ",'" + gender + "','" + mid + "','" + birthday + "')");
 
         db.close();
     }
@@ -41,7 +42,7 @@ public class StudentDaoImpl implements StudentDao {
         String gender = stu.getGender();
         Integer age = stu.getAge();
         String mid = stu.getMid();
-        Date birthday = stu.getBirthday();
+        String birthday = stu.getBirthday();
 
         db.executeUpdate("UPDATE student set sname='" + sname + "', gender='" + gender +
                 "', age='" + age + "', mid='" + mid + "', birthday='" + birthday + "',where sid='" + sid + "'");
@@ -69,14 +70,14 @@ public class StudentDaoImpl implements StudentDao {
         String gender = null;
         Integer age = null;
         String mid = null;
-        Date birthday = null;
+        String birthday = null;
         try {
             while(rs.next()){
                 sname = rs.getString("sname");
                 gender = rs.getString("gender");
                 age = rs.getInt("age");
                 mid = rs.getString("mid");
-                birthday = rs.getDate("birthday");
+                birthday = rs.getString("birthday");
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
@@ -97,32 +98,31 @@ public class StudentDaoImpl implements StudentDao {
         List<Student> stus = new ArrayList<>();
         DBUtil db = new DBUtil();
 
-        ResultSet rs = db.executeQuery("select * from student");
+        ResultSet rs = db.executeQuery(sql);
 
         String sid = null;
         String sname = null;
         String gender = null;
         Integer age = null;
         String mid = null;
-        Date birthday = null;
+        String birthday = null;
         try {
             while(rs.next()){
+                MajorDao majorDao = new MajorDaoImpl();
                 sid = rs.getString("sid");
                 sname = rs.getString("sname");
                 gender = rs.getString("gender");
                 age = rs.getInt("age");
                 mid = rs.getString("mid");
-                birthday = rs.getDate("birthday");
-                stus.add( new Student(sid,sname,gender,age,birthday,mid));
+                String mname = majorDao.getByMid(mid).getMname();
+                birthday = rs.getString("birthday");
+                stus.add( new Student(sid,sname,gender,age,birthday,mname));
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
-        }finally {
-            db.close();
-
-            return stus;
         }
 
-
+        db.close();
+        return stus;
     }
 }

@@ -3,7 +3,7 @@ package cn.edu.hit.studentservlet.action;
 import java.io.*;
 import java.util.Date;
 import java.util.List;
-//import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSON;
 
 import cn.edu.hit.studentservlet.dao.StudentDao;
 import cn.edu.hit.studentservlet.dao.impl.StudentDaoImpl;
@@ -12,7 +12,7 @@ import com.mysql.cj.xdevapi.JsonArray;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 
-import static com.mysql.cj.xdevapi.Type.JSON;
+//import static com.mysql.cj.xdevapi.Type.JSON;
 
 @WebServlet(name = "StudentServlet", value = "/student-servlet")
 public class StudentServlet extends HttpServlet {
@@ -35,7 +35,7 @@ public class StudentServlet extends HttpServlet {
             String gender = request.getParameter("gender");
             Integer age = Integer.valueOf(request.getParameter("age"));
             String mid = request.getParameter("mid");
-            Date birthday = new Date(request.getParameter("birthday"));
+            String birthday = request.getParameter("birthday");
 
             StudentDao stuDao = new StudentDaoImpl();
             stuDao.add(new Student(sid,sname,gender,age,birthday,mid));
@@ -43,13 +43,11 @@ public class StudentServlet extends HttpServlet {
         else if (action.equals("getAll")){
             StudentDao stuDao = new StudentDaoImpl();
             List<Student> stus = stuDao.getAll("select * from student");
-//            out.println(JSON.toJSONString(stus));
+            out.println(JSON.toJSONString(stus));
         }
 
 
     }
-
-
     public void destroy() {
     }
 }

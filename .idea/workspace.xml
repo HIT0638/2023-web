@@ -9,17 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e355fdcb-f20d-4b06-9a2b-37c4bc030bb8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1a9bc1f8-bf72-484d-a3de-64014f5466fe.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1a9bc1f8-bf72-484d-a3de-64014f5466fe.xml" afterDir="false" />
+    <list default="true" id="e355fdcb-f20d-4b06-9a2b-37c4bc030bb8" name="Changes" comment="student.html addStuForm">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/StudentServlet_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/StudentServlet_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/web.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2/StudentServlet/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2/StudentServlet/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2/StudentServlet/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2/StudentServlet/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/lab2/StudentServlet/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/StudentServlet/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab2/StudentServlet/src/main/java/cn/edu/hit/studentservlet/action/StudentServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/StudentServlet/src/main/java/cn/edu/hit/studentservlet/action/StudentServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/StudentServlet/src/main/java/cn/edu/hit/studentservlet/dao/impl/StudentDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/StudentServlet/src/main/java/cn/edu/hit/studentservlet/dao/impl/StudentDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/StudentServlet/src/main/java/cn/edu/hit/studentservlet/db/DBUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/StudentServlet/src/main/java/cn/edu/hit/studentservlet/db/DBUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/StudentServlet/src/main/java/cn/edu/hit/studentservlet/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/StudentServlet/src/main/java/cn/edu/hit/studentservlet/entity/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab2/StudentServlet/src/main/webapp/student.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/StudentServlet/src/main/webapp/student.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,6 +48,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../CodeWork/ProEnv/apache-maven-3.9.0" />
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
@@ -65,29 +64,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/CodeData/web",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.20114942",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/15629/.m2/repository/com/alibaba/fastjson/2.0.21/fastjson-2.0.21.jar&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.4&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\CodeData\web\lab2\StudentServlet\src\main\java\cn\edu\hit\studentservlet\action" />
@@ -95,7 +98,7 @@
       <recent name="D:\CodeData\web\lib" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 10.1.6">
+  <component name="RunManager" selected="Tomcat 服务器.Tomcat 10.1.6">
     <configuration name="DBUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cn.edu.hit.studentservlet.db.DBUtil" />
       <module name="StudentServlet" />
@@ -217,20 +220,16 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.DBUtil" />
-      <item itemvalue="Database Script.major.sql" />
-      <item itemvalue="JavaScript Debug.student.html (1)" />
-      <item itemvalue="JavaScript Debug.student.html (2)" />
+      <item itemvalue="JavaScript 调试.student.html (1)" />
+      <item itemvalue="JavaScript 调试.student.html (2)" />
       <item itemvalue="JUnit.All in StudentServlet" />
-      <item itemvalue="Tomcat Server.Tomcat 10.1.6" />
+      <item itemvalue="Tomcat 服务器.Tomcat 10.1.6" />
+      <item itemvalue="应用程序.DBUtil" />
+      <item itemvalue="数据库脚本.major.sql" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Database Script.major.sql" />
-        <item itemvalue="JavaScript Debug.student.html (1)" />
-        <item itemvalue="JavaScript Debug.student.html (2)" />
         <item itemvalue="JUnit.All in StudentServlet" />
-        <item itemvalue="Application.DBUtil" />
       </list>
     </recent_temporary>
   </component>
@@ -253,8 +252,19 @@
       <workItem from="1679450313664" duration="133000" />
       <workItem from="1679450485097" duration="39000" />
       <workItem from="1679450540739" duration="210000" />
-      <workItem from="1679452082823" duration="21000" />
+      <workItem from="1679452082823" duration="3237000" />
+      <workItem from="1679455376129" duration="1220000" />
+      <workItem from="1679471787084" duration="62000" />
+      <workItem from="1679471862146" duration="2816000" />
     </task>
+    <task id="LOCAL-00001" summary="student.html addStuForm">
+      <created>1679452169048</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679452169048</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,5 +280,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="student.html addStuForm" />
+    <option name="LAST_COMMIT_MESSAGE" value="student.html addStuForm" />
   </component>
 </project>

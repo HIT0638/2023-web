@@ -14,7 +14,7 @@ public class DBUtil {
      */
     public DBUtil() {
         try {
-            Class.forName("com.mysql.jc.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
             conn = DriverManager.getConnection(URL, USER, PASSWORD);
             stmt = conn.createStatement();
         } catch (ClassNotFoundException e) {

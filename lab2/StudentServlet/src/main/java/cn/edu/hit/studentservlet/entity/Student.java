@@ -9,18 +9,18 @@ public class Student {
     private String gender;
 
     private Integer age;
-    private Date birthday;
+    private String birthday;
     private String mid;
 
     public Student(){
 
     }
-    public Student(String sid, String sname, String gender, Integer age,Date birthday, String mid){
+    public Student(String sid, String sname, String gender, Integer age,String birthday, String mid){
         this.sid = sid;
         this.sname = sname;
         this.gender = gender;
         this.age = new Integer(age);
-        this.birthday = new Date(String.valueOf(birthday));
+        this.birthday = birthday;
         this.mid = mid;
     }
 
@@ -56,11 +56,11 @@ public class Student {
         this.age = age;
     }
 
-    public Date getBirthday() {
+    public String getBirthday() {
         return birthday;
     }
 
-    public void setBirthday(Date birthday) {
+    public void setBirthday(String birthday) {
         this.birthday = birthday;
     }
 
