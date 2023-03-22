@@ -38,7 +38,9 @@ public class StudentServlet extends HttpServlet {
             String birthday = request.getParameter("birthday");
 
             StudentDao stuDao = new StudentDaoImpl();
-            stuDao.add(new Student(sid,sname,gender,age,birthday,mid));
+            if(stuDao.add(new Student(sid,sname,gender,age,birthday,mid)) == false){
+                out.println("exist");
+            }
         }
         else if (action.equals("getAll")){
             StudentDao stuDao = new StudentDaoImpl();

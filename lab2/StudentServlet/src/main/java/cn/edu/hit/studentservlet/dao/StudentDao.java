@@ -5,7 +5,7 @@ import cn.edu.hit.studentservlet.entity.Student;
 import java.util.List;
 
 public interface StudentDao {
-    void add(Student stu);
+    boolean add(Student stu);
     void modify(Student stu);
     void remove(String sid);
     Student getBySid(String sid);

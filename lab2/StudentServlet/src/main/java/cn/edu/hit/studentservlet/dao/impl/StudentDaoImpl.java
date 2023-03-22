@@ -4,18 +4,16 @@ import cn.edu.hit.studentservlet.dao.MajorDao;
 import cn.edu.hit.studentservlet.dao.StudentDao;
 import cn.edu.hit.studentservlet.db.DBUtil;
 import cn.edu.hit.studentservlet.entity.Student;
-import com.mysql.cj.protocol.Resultset;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 public class StudentDaoImpl implements StudentDao {
 
     @Override
-    public void add(Student stu) {
+    public boolean add(Student stu) {
         DBUtil db = new DBUtil();
         String sid = stu.getSid();
         String sname = stu.getSname();
@@ -24,10 +22,15 @@ public class StudentDaoImpl implements StudentDao {
         String mid = stu.getMid();
         String birthday = stu.getBirthday();
 
-        db.executeUpdate("INSERT INTO student(sid,sname,age,gender,mid,birthday) values" +
-                "('" + sid + "','" + sname + "'," + age + ",'" + gender + "','" + mid + "','" + birthday + "')");
+        if(getBySid(sid) != null){
+            db.executeUpdate("INSERT INTO student(sid,sname,age,gender,mid,birthday) values" +
+                    "('" + sid + "','" + sname + "'," + age + ",'" + gender + "','" + mid + "','" + birthday + "')");
+            db.close();
+            return true;
+        }
 
         db.close();
+        return false;
     }
 
     /**
@@ -84,7 +87,7 @@ public class StudentDaoImpl implements StudentDao {
         }finally {
             db.close();
 
-            return new Student(sid,sname,gender,age,birthday,mid);
+            return sname==null ? null : new Student(sid,sname,gender,age,birthday,mid);
         }
     }
 
