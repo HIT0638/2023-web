@@ -22,7 +22,7 @@ public class StudentDaoImpl implements StudentDao {
         String mid = stu.getMid();
         String birthday = stu.getBirthday();
 
-        if(getBySid(sid) != null){
+        if(getBySid(sid) == null){
             db.executeUpdate("INSERT INTO student(sid,sname,age,gender,mid,birthday) values" +
                     "('" + sid + "','" + sname + "'," + age + ",'" + gender + "','" + mid + "','" + birthday + "')");
             db.close();

@@ -39,7 +39,7 @@ public class StudentServlet extends HttpServlet {
 
             StudentDao stuDao = new StudentDaoImpl();
             if(stuDao.add(new Student(sid,sname,gender,age,birthday,mid)) == false){
-                out.println("exist");
+                out.println(JSON.toJSONString("exist"));
             }
         }
         else if (action.equals("getAll")){
