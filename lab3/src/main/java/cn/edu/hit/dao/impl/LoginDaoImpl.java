@@ -11,7 +11,7 @@ public class LoginDaoImpl implements LoginDao {
     public boolean login(String uid, String pwd) {
         DBUtil db = new DBUtil();
 
-        String sql = "select count(*) from admin where sid = '" + uid + "'and pwd = '" + pwd + "'";
+        String sql = "select count(*) from admin where uid = '" + uid + "'and pwd = '" + pwd + "'";
         ResultSet rs = db.executeQuery(sql);
 
         int count = 0;

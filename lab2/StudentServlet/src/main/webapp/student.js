@@ -30,10 +30,6 @@ $(document).ready(function () {
         }
     })
 })
-
-document.getElementById("check").innerHTML = xmlHttp.readyState;
-document.getElementById("check").innerHTML = xmlHttp.status;
-
 $(function () {
     $("#submitButton").bind('click',function (){
         if($("#sid").val().length==0) {

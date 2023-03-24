@@ -37,7 +37,7 @@ public class StudentDaoImpl implements StudentDao {
         String birthday = stu.getBirthday();
 
         db.executeUpdate("UPDATE student set sname='" + sname + "', gender='" + gender +
-                "', age='" + age + "', mid='" + mid + "', birthday='" + birthday + "',where sid='" + sid + "'");
+                "', age=" + age + ", mid='" + mid + "', birthday='" + birthday + "' where sid='" + sid + "'");
     }
 
     @Override
