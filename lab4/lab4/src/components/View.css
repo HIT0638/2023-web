@@ -1,0 +1,41 @@
+.ListView {
+    display: flex;
+    flex-direction: row;
+    width: 630px;
+    height: 500px;
+    margin: auto;
+    margin-top: auto;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+img {
+    width: 106px;
+    height: 160px;
+}
+
+.title {
+    text-align: center;
+    font-size: large;
+}
+
+
+.ViewItem {
+    width: 106px;
+    height: 200px;
+    margin: 10px;
+}
+
+.txt {
+    font-size: 9pt;
+}
+#rate{
+    color:green;
+}

@@ -10,17 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4b47e83-cb04-4f38-a74d-27929d2da00b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/dataSources/1a9bc1f8-bf72-484d-a3de-64014f5466fe.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/dataSources/1a9bc1f8-bf72-484d-a3de-64014f5466fe.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/web.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StudentServlet/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StudentServlet/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StudentServlet/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StudentServlet/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StudentServlet/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/StudentServlet/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StudentServlet/src/main/java/cn/edu/hit/studentservlet/action/StudentServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/StudentServlet/src/main/java/cn/edu/hit/studentservlet/action/StudentServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StudentServlet/src/main/webapp/student.html" beforeDir="false" afterPath="$PROJECT_DIR$/StudentServlet/src/main/webapp/student.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3d1f3d77-157d-4c27-8d06-3eb922cabac9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/3d1f3d77-157d-4c27-8d06-3eb922cabac9.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,24 +42,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/CodeData/web",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/CodeData/web&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Tomcat 10.1.6" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.6" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/StudentServlet_war_exploded/student.html" />
@@ -169,6 +159,7 @@
       <option name="presentableId" value="Default" />
       <updated>1679451495230</updated>
       <workItem from="1679451496734" duration="584000" />
+      <workItem from="1679665172401" duration="96000" />
     </task>
     <servers />
   </component>

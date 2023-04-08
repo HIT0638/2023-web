@@ -10,13 +10,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e355fdcb-f20d-4b06-9a2b-37c4bc030bb8" name="Changes" comment="lab2 v0.1">
+      <change afterPath="$PROJECT_DIR$/lab4/lab4/doc/2021111406-滕博-实验4报告.doc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab1/~$实验1要求.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2/StudentServlet/src/main/webapp/student.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/StudentServlet/src/main/webapp/student.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2/StudentServlet/src/main/webapp/student.js" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/StudentServlet/src/main/webapp/student.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab3/src/main/java/cn/edu/hit/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab3/src/main/java/cn/edu/hit/action/StudentServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab3/src/main/webapp/WEB-INF/addstudent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/lab3/src/main/webapp/addstudent.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab3/src/main/webapp/student.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/lab3/src/main/webapp/student.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/.idea/dataSources/3d1f3d77-157d-4c27-8d06-3eb922cabac9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/.idea/dataSources/3d1f3d77-157d-4c27-8d06-3eb922cabac9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/doc/学号-姓名-实验2报告.doc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab3/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab3/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab3/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab3/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab3/mvnw.cmd" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,34 +70,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;true&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;true&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/CodeData/web/lab3&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.4&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Downloaded.Files.Path.Enabled": "true",
+    "Repository.Attach.Annotations": "true",
+    "Repository.Attach.JavaDocs": "true",
+    "Repository.Attach.Sources": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/CodeData/web",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.4",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\CodeData\web\lab2\StudentServlet\src\main\java\cn\edu\hit\studentservlet\action" />
@@ -269,6 +272,9 @@
       <workItem from="1679558836796" duration="3074000" />
       <workItem from="1679624810692" duration="950000" />
       <workItem from="1679627109404" duration="39000" />
+      <workItem from="1679665269761" duration="248000" />
+      <workItem from="1680084936159" duration="105000" />
+      <workItem from="1680918847083" duration="112000" />
     </task>
     <task id="LOCAL-00001" summary="student.html addStuForm">
       <created>1679452169048</created>
